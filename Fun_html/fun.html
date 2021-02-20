@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>IsEven</title>
+    <script>
+      function doInputOutPut() {
+        let number = parseInt(document.getElementById("numberInputBox").value);
+        let result = isEven();
+        document.getElementById("outputDiv").innerHTML =
+          number + "isEven: " + result;
+      }
+      function isEven(value) {
+        if (value % 2 === 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Please enter an integer: <input type=" text" id=" numberInputBox" />
+    <button type=" button" onclick=" doInputOutput()">Is Even?</button>
+    <div id=" outputDiv"></div>
+  </body>
+</html>
