@@ -12,3 +12,6 @@ let int_part_only = parseInt(user_input);
 console.log(int_part_only)
 console.log(typeof int_part_only)
 console.log("---------------visual separator---------------");
+let converted = +user_input;
+console.log("The result is:  " + converted);
+console.log(typeof converted);
